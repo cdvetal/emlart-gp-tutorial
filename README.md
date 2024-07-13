@@ -23,9 +23,10 @@ You will also need the weights for the models from the following link:
 
 [models](https://www.dropbox.com/s/vusdr3oo5htfqh9/models.zip?dl=1) 
 
-unzip the file into a folder called 
+unzip the file into a folder called models inside the cloned repository 
 ```bash
 models/
+tensorgp/
 ```
 
 ## Usage
