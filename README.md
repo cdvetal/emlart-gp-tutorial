@@ -9,21 +9,16 @@ The following commands will install the required packages to execute the code:
 
 ```bash
 conda create --name emlart-gp-tutorial python=3.10
-
 conda activate emlart-gp-tutorial 
-
 conda install -c conda-forge tensorflow
-
 conda install matplotlib scikit-image pytorch-lightning -c pytorch
-
 python -m pip install git+https://github.com/openai/CLIP.git         
-
 ```
-You will also need the weights for the models from the following link:
+You will also need the weights for the models used by the provided scripts from the following link:
 
 [models](https://www.dropbox.com/s/vusdr3oo5htfqh9/models.zip?dl=1) 
 
-unzip the file into a folder called models inside the cloned repository 
+unzip the file ensuring that a folder called "models" is inside the cloned repository 
 ```bash
 models/
 tensorgp/
