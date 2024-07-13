@@ -32,11 +32,11 @@ models/
 
 To execute the emlart-gp approach use the following command on the terminal in the repository folder:
 
-```bash
+```console
 python emlart_gp.py <starting random seed number> <#of runs> <# of generations> <text prompt>
 ```
 
 E.g.
 ```bash
 python emlart_gp.py 10 1 30 "sunset, bright colors" 
-```
+``` 
