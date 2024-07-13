@@ -27,6 +27,8 @@ unzip the file into a folder called models inside the cloned repository
 ```bash
 models/
 tensorgp/
+stablediffusion_examples/
+...
 ```
 
 ## Usage
