@@ -17,7 +17,7 @@ with torch.no_grad():
 ###
 
 # Load the image from the file path
-image_path = sys.argv[1]#"63b51fd5-5c75-4d02-9846-01a4736889e7.jpeg"  
+image_path = sys.argv[1] 
 pil_image = Image.open(image_path)
 # Display the image
 pil_image.show()
@@ -34,10 +34,7 @@ prediction = aesthetic_model(torch.from_numpy(im_emb_arr).to(device).type(torch.
 
 # cosine similarity between image features and text features
 similarity = torch.cosine_similarity(text_features, image_features, dim=-1).mean()
-#print("similarity", similarity)
 
 aesthetic_eval_laion = prediction.item()
 print("aesthetic_eval_laion", aesthetic_eval_laion)
-        
-similarity = torch.cosine_similarity(text_features, image_features, dim=-1).mean()
 print("similarity", similarity.item())
